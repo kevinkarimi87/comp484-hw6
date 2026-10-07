@@ -1,0 +1,86 @@
+/* Color Palette
+# - navy: #1E2A44 (header, body, and footer background, text on light)
+# - off-white: #F4F6F8 (work experience background, text on dark)
+# - steel blue: #DDE6EF (education background)
+# - sky blue: #8FB8DE (accent for links)
+*/
+
+/* Global styles 
+------------------------------------*/
+
+header img {
+/* Portrait image in the header */
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center 35%;
+  border-radius: 50%; /* turns the square into a circle */
+}
+
+body {
+  margin: 0; /* removes the default white border around the page */
+  line-height: 1.5;
+  background: #1E2A44; /* matches the footer so any extra space blends in */
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+/* Header & Footer
+------------------------------------*/
+header, footer {
+  background: #1E2A44;
+  color: #F4F6F8;
+}
+
+header, footer, .work-experience, .education {
+  padding: 3rem 2rem;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700; /* bold name */
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+header h2 {
+  font-size: 1.25rem; /* smaller than other h2s, since it's a tagline */
+  font-weight: 400; /* regular weight so the name stands out more */
+}
+
+/* Remove the extra default top margin so the padding controls the spacing */
+section h2 {
+  margin-top: 0;
+}
+
+/* Remove the extra default top margin so the padding controls the spacing */
+footer h2 {
+  margin-top: 0;
+}
+
+footer a {
+  color: #8FB8DE; /* Sky blue for links */
+}
+
+/* Work Experience
+------------------------------------*/
+.work-experience {
+  background: #F4F6F8;
+  color: #1E2A44;
+}
+
+/* Education
+------------------------------------*/
+.education {
+  background: #DDE6EF;
+  color: #1E2A44;
+}
